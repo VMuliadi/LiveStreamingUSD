@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    // managing the incoming money
+    var y = $("span#income");
+    y.text(x*100);
+
     // define the font that render by browser
     $("body").css("font-family", "Open Sans");
 

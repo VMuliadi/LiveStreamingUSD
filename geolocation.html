@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<script>
+window.onload = init;
+function init() {
+    navigator.geolocation.getCurrentPosition(getPosition);
+    function getPosition(position) {
+        var user_lat = position.coords.latitude;
+        var user_long = position.coords.longitude;
+        var url = 'http://maps.googleapis.com/maps/api/geocode/json?latlng='+user_lat+','+user_long;
+    }
+}
+</script>
+</html>
